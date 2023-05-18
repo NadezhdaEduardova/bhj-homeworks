@@ -1,8 +1,13 @@
 const dead = document.getElementById("dead");
 const lost = document.getElementById("lost");
+
+const reload = () => {
+	dead.textContent = 0;
+	lost.textContent = 0;
+}
 const getHole = (index) => document.getElementById("hole${index}");
 
-for (i = 0, i < 10, i++) {
+for (i = 1; i < 10; i++) {
   let hole = getHole(i);
   
   hole.onclick = function () {
