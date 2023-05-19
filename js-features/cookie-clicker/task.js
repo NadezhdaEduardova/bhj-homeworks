@@ -1,5 +1,5 @@
 const photo = document.getElementById("cookie");
-const clickerCounter = document.getElementById("clicker_counter");
+const clickerCounter = document.getElementById("clicker__counter");
 
 photo.onclick = function() {
   if (clickerCounter.textContent % 2 == 0) {
