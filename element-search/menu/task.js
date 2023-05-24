@@ -9,7 +9,7 @@ for (let i = 0; i < arrLinks.length; i++) {
   link.onclick = function () {
     if (subMenu && subMenu.className.includes("menu_active")) {
       subMenu.className = "menu menu_sub";
-      return fals;
+      return false;
     }
     if (subMenu) {
       subMenu.className = "menu menu_sub menu_active";
