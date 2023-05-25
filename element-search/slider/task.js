@@ -1,7 +1,6 @@
 const arrSlides = Array.from(document.querySelectorAll('.slider__item'));
 const prev = document.getElementsByClassName('slider__arrow_prev')[0];
 const next = document.getElementsByClassName('slider__arrow_next')[0];
-let item = arrSlides.findIndex(element => element.className === 'slider__item slider__item_active');
 
 prev.onclick = () => { 
     let item = arrSlides.findIndex(element => element.className === 'slider__item slider__item_active');
