@@ -4,15 +4,15 @@ const itemDropdown = Array.from(document.querySelectorAll('.dropdown__item'));
                                 
 valueDropdwn.addEventListener("click", (event) => {
   listDropdown.classList.toggle('dropdown__list_active');
-});
+})
+
 for (let i = 0; i < itemDropdown.length; i++) {
   itemDropdown[i].addEventListener('click', (event) => {
     valueDropdown.textContent = itemDropdown[i].textContent;
     listDropdown.classList.remove('dropdown__list_active');
-    return false;;
-  )}
-};
-                                   
+    return false;
+  })
+}
 
   
                                                                          
