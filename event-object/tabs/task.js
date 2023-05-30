@@ -11,4 +11,5 @@ tabsBtn.forEach((element, index) => {
     element.classList.add('tab_active');
     tabsContent[tabIndex].classList.add("tab__content_active");
     evt.preventDefault();
-}));
+  })
+})
