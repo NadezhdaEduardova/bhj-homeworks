@@ -10,7 +10,7 @@ for (let i = 0; i < itemDropdown.length; i++) {
   itemDropdown[i].addEventListener('click', (event) => {
     valueDropdown.textContent = itemDropdown[i].textContent;
     listDropdown.classList.remove('dropdown__list_active');
-    return false;
+    event.preventDefault();
   })
 }
 
