@@ -1,9 +1,9 @@
-const wedgetChat = document.quarySelected(".chat-wedget");
-wedgetChat.addElementListener('click', () {
+const wedgetChat = document.querySelector(".chat-wedget");
+wedgetChat.addElementListener('click', () => {
   wedgetChat.classList.add("chat-wedget_active");
-})
+});
 
-const input = document.grtElementById("chat-wedget__input");
+const input = document.getElementById("chat-wedget__input");
 const messages = document.querySelector(".chat-widget__messages");
 let robotMessages = [
 	"Добрый день, мы ещё не проснулись. Напишите через 10 лет",
@@ -21,7 +21,7 @@ input.addEventListener('keydown', (event) => {
       let time = new Date();
       let currentDate = [time.getHours(), time.getMinutes()];
 
-      const roborMessage = robotMessages[Math.floor(Math.random() * robotMessages.length)];
+      const robotMessage = robotMessages[Math.floor(Math.random() * robotMessages.length)];
 
       const messages = document.querySelector(".chat-widget__messages");
 
