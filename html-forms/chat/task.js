@@ -1,9 +1,9 @@
-const wedgetChat = document.querySelector(".chat-wedget");
-wedgetChat.addElementListener('click', () => {
-  wedgetChat.classList.add("chat-wedget_active");
+const widgetChat = document.querySelector(".chat-widget");
+widgetChat.addEventListener('click', () => {
+  widgetChat.classList.add("chat-widget_active");
 });
 
-const input = document.getElementById("chat-wedget__input");
+const input = document.getElementById("chat-widget__input");
 const messages = document.querySelector(".chat-widget__messages");
 let robotMessages = [
 	"Добрый день, мы ещё не проснулись. Напишите через 10 лет",
@@ -19,14 +19,11 @@ input.addEventListener('keydown', (event) => {
     if ((input.value.length > 0) && (event.key === "Enter")) {
 
       let time = new Date();
-      let currentDate = [time.getHours(), time.getMinutes()];
-
       const robotMessage = robotMessages[Math.floor(Math.random() * robotMessages.length)];
-
       const messages = document.querySelector(".chat-widget__messages");
 
       messages.innerHTML += `
-         <div class="message" "messege_client">
+         <div class="message message_client">
             <div class="message__time">${time.getHours()}:${time.getMinutes()}</div>
             <div class="message__text">${input.value}</div>
          </div>
