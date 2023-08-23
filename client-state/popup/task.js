@@ -6,8 +6,6 @@ const cookie = pairs.find((i) => i.startsWith('modal' + '='));
 
 if (!cookie) {
   modalSubscribe.classList.add('modal_active');
-} else {
-  modalSubscribe.classList.remove('modal_active');
 };
 
 modalClose.addEventListener('click', (event) => {
